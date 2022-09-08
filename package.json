@@ -1,0 +1,56 @@
+{
+  "name": "postman-moderation-service",
+  "version": "1.0.2",
+  "description": "Service to detect if a Postman entity is spam and take action accordingly",
+  "main": "app.js",
+  "scripts": {
+    "start": "scripts/start/start.sh",
+    "stop": "scripts/stop/stop.sh",
+    "debug": "scripts/debug/debug.sh",
+    "test": "node npm/test.js",
+    "test-system": "node npm/test-system.js",
+    "test-lint": "node npm/test-lint.js",
+    "test-unit": "node npm/test-unit.js",
+    "test-integration": "node npm/test-integration.js",
+    "update": "npm-check -u",
+    "docker": "scripts/docker/docker.sh"
+  },
+  "dependencies": {
+    "ajv": "^8.11.0",
+    "ajv-errors": "^3.0.0",
+    "async": "^3.2.4",
+    "basic-auth": "^2.0.1",
+    "cors": "^2.8.5",
+    "env-lift": "^0.0.3",
+    "fastify": "3.16.2",
+    "fastify-express": "0.3.2",
+    "fastify-helmet": "5.3.1",
+    "lodash": "^4.17.21",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.19",
+    "os": "^0.1.2",
+    "pm2": "^5.2.0",
+    "postman-request": "^2.88.1-postman.31",
+    "sequelize": "^6.21.3"
+  },
+  "engines": {
+    "node": "^14.4.0"
+  },
+  "author": "Bruke <mail@postmanlabs.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "chalk": "2.3.2",
+    "eslint": "^7.28.0",
+    "eslint-plugin-jsdoc": "^39.3.6",
+    "eslint-plugin-lodash": "^7.4.0",
+    "eslint-plugin-mocha": "^10.1.0",
+    "eslint-plugin-security": "^1.5.0",
+    "jsdoc-to-markdown": "^7.1.1",
+    "mocha": "^10.0.0",
+    "nyc": "^15.1.0",
+    "packity": "^0.3.4",
+    "pretty-ms": "^8.0.0",
+    "recursive-readdir": "^2.2.2",
+    "shelljs": "^0.8.5"
+  }
+}

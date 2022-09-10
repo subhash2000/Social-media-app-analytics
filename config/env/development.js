@@ -4,7 +4,7 @@
  * done using environment variables used using `env-lift`.
  */
 
- module.exports = require('env-lift').load('moderation', {
+ module.exports = require('env-lift').load('bruke', {
   port: 1337,
 
   env: 'development',

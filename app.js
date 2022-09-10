@@ -74,7 +74,7 @@ module.exports = async () => {
   }
 
   catch (e) {
-    console.log('Moderation Service ~ Error during lifting the server', e);
+    console.log('Bruke Service~ Error during lifting the server', e);
 
     process.exit(1);
   }

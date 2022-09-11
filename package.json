@@ -1,7 +1,7 @@
 {
-  "name": "postman-moderation-service",
+  "name": "Bruke2.0",
   "version": "1.0.2",
-  "description": "Service to detect if a Postman entity is spam and take action accordingly",
+  "description": "Bruke backend service",
   "main": "app.js",
   "scripts": {
     "start": "scripts/start/start.sh",
@@ -36,7 +36,7 @@
   "engines": {
     "node": "^14.4.0"
   },
-  "author": "Bruke <mail@postmanlabs.com>",
+  "author": "Bruke",
   "license": "ISC",
   "devDependencies": {
     "chalk": "2.3.2",

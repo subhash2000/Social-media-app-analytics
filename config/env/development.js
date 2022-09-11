@@ -10,7 +10,7 @@
   env: 'development',
 
   datastores: {
-    database: 'brute_dev',
+    database: 'bruke',
     port: 3306,
     pool: {
       // override other connection pool properties here if needed.

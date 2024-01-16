@@ -1,7 +1,7 @@
 {
-  "name": "Bruke2.0",
+  "name": "Social-media-analytics",
   "version": "1.0.2",
-  "description": "Bruke backend service",
+  "description": "Social-media-analytics",
   "main": "app.js",
   "scripts": {
     "start": "scripts/start/start.sh",
@@ -11,23 +11,25 @@
     "test-system": "node npm/test-system.js",
     "test-lint": "node npm/test-lint.js",
     "test-unit": "node npm/test-unit.js",
-    "test-integration": "node npm/test-integration.js",
-    "update": "npm-check -u",
-    "docker": "scripts/docker/docker.sh"
+    "test-integration": "node npm/test-integration.js"
   },
   "dependencies": {
+    "@fastify/rate-limit": "^6.0",
     "ajv": "^8.11.0",
     "ajv-errors": "^3.0.0",
     "async": "^3.2.4",
+    "aws-sdk": "^2.1536.0",
     "basic-auth": "^2.0.1",
+    "chai": "^5.0.0",
     "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "env-lift": "^0.0.3",
-    "fastify": "3.16.2",
+    "fastify": "^3.16.2",
     "fastify-express": "0.3.2",
     "fastify-helmet": "5.3.1",
     "lodash": "^4.17.21",
     "mysql2": "^2.3.3",
-    "nodemon": "^2.0.19",
+    "nodemon": "^2.0.22",
     "os": "^0.1.2",
     "pm2": "^5.2.0",
     "postman-request": "^2.88.1-postman.31",
@@ -36,7 +38,7 @@
   "engines": {
     "node": "^14.4.0"
   },
-  "author": "Bruke",
+  "author": "Subhash Yadav",
   "license": "ISC",
   "devDependencies": {
     "chalk": "2.3.2",

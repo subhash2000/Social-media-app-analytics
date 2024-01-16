@@ -5,7 +5,7 @@
 
 1. Install dependencies: `npm install`
 2. Set up environment variables: Create a `.env` file and configure as specified in the provided template.
-3. Run the application: `npm run dev`
+3. Run the application: `nodemon start`. We are using this package only for dev purpose.
 
 
 ## Future Improvements

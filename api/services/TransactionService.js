@@ -3,7 +3,7 @@
  *
  * Primarily handled transaction start, commit, rollback
  */
-module.exports = {
+ module.exports = {
   /**
    * Start a new transaction.
    *

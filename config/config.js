@@ -2,7 +2,7 @@
  * Based on the environment, will return
  * the complete environment configuration
  */
- module.exports = function () {
+module.exports = function () {
   let _ = require('lodash'),
     baseSecurityConfig = require('./security'),
     environmentConfig;

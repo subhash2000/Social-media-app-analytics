@@ -1,3 +1,4 @@
 module.exports = {
-  Health: require('./Health')
+  Health: require('./Health'),
+  Posts: require('./Posts')
 };

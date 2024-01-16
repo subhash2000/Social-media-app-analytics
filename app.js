@@ -33,6 +33,13 @@ global.app.fastify = fastify;
 
 module.exports = async () => {
   try {
+    await fastify.register(require('@fastify/rate-limit'),
+      {
+        global: true,
+        max: 5,
+        timeWindow: 1000 * 30
+      });
+
     /**
      * Attach the fastify-express middleware
      */
@@ -74,7 +81,7 @@ module.exports = async () => {
   }
 
   catch (e) {
-    console.log('Bruke Service~ Error during lifting the server', e);
+    console.log('Service~ Error during lifting the server', e);
 
     process.exit(1);
   }
